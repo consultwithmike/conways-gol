@@ -1,0 +1,236 @@
+{
+  "info": {
+    "name": "Game of Life",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "Next State",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/1/next",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "1",
+            "next"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Next State with Iterations",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/1/next/3",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "1",
+            "next",
+            "3"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Finalize",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/1/finalize",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "1",
+            "finalize"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Finalize with Max Iterations",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/1/finalize/50",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "1",
+            "finalize",
+            "50"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Reset",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/1/reset",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "1",
+            "reset"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "New Game",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/new",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "new"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "All Games",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/all",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "all"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Get Game",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/1",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "1"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Upload",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "http://localhost:5203/game/upload",
+          "protocol": "http",
+          "host": [
+            "localhost:5203"
+          ],
+          "path": [
+            "game",
+            "upload"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cells\": [\n    {\n      \"x\": 0,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 1,\n      \"y\": 0,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 3,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 4,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 5,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 6,\n      \"y\": 0,\n      \"alive\": false\n    },\n    {\n      \"x\": 7,\n      \"y\": 0,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 9,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 10,\n      \"y\": 0,\n      \"alive\": true\n    },\n    {\n      \"x\": 11,\n      \"y\": 0,\n      \"alive\": false\n    },\n    {\n      \"x\": 0,\n      \"y\": 1,\n      \"alive\": true\n    },\n    {\n      \"x\": 1,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 1,\n      \"alive\": true\n    },\n    {\n      \"x\": 3,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 7,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 9,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 11,\n      \"y\": 1,\n      \"alive\": false\n    },\n    {\n      \"x\": 0,\n      \"y\": 2,\n      \"alive\": false\n    },\n    {\n      \"x\": 1,\n      \"y\": 2,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 2,\n      \"alive\": false\n    },\n    {\n      \"x\": 3,\n      \"y\": 2,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 2,\n      \"alive\": true\n    },\n    {\n      \"x\": 5,\n      \"y\": 2,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 2,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 2,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 2,\n      \"alive\": true\n    },\n    {\n      \"x\": 9,\n      \"y\": 2,\n      \"alive\": true\n    },\n    {\n      \"x\": 10,\n      \"y\": 2,\n      \"alive\": true\n    },\n    {\n      \"x\": 11,\n      \"y\": 2,\n      \"alive\": false\n    },\n    {\n      \"x\": 0,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 1,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 3,\n      \"y\": 3,\n      \"alive\": true\n    },\n    {\n      \"x\": 4,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 7,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 9,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 11,\n      \"y\": 3,\n      \"alive\": false\n    },\n    {\n      \"x\": 0,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 1,\n      \"y\": 4,\n      \"alive\": true\n    },\n    {\n      \"x\": 2,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 3,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 4,\n      \"alive\": true\n    },\n    {\n      \"x\": 5,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 4,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 4,\n      \"alive\": true\n    },\n    {\n      \"x\": 9,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 11,\n      \"y\": 4,\n      \"alive\": false\n    },\n    {\n      \"x\": 0,\n      \"y\": 5,\n      \"alive\": true\n    },\n    {\n      \"x\": 1,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 5,\n      \"alive\": true\n    },\n    {\n      \"x\": 3,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 5,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 5,\n      \"alive\": true\n    },\n    {\n      \"x\": 9,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 11,\n      \"y\": 5,\n      \"alive\": false\n    },\n    {\n      \"x\": 0,\n      \"y\": 6,\n      \"alive\": false\n    },\n    {\n      \"x\": 1,\n      \"y\": 6,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 6,\n      \"alive\": true\n    },\n    {\n      \"x\": 3,\n      \"y\": 6,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 6,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 6,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 6,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 6,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 6,\n      \"alive\": true\n    },\n    {\n      \"x\": 9,\n      \"y\": 6,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 6,\n      \"alive\": true\n    },\n    {\n      \"x\": 11,\n      \"y\": 6,\n      \"alive\": true\n    },\n    {\n      \"x\": 0,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 1,\n      \"y\": 7,\n      \"alive\": true\n    },\n    {\n      \"x\": 2,\n      \"y\": 7,\n      \"alive\": true\n    },\n    {\n      \"x\": 3,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 7,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 7,\n      \"alive\": true\n    },\n    {\n      \"x\": 8,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 9,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 11,\n      \"y\": 7,\n      \"alive\": false\n    },\n    {\n      \"x\": 0,\n      \"y\": 8,\n      \"alive\": true\n    },\n    {\n      \"x\": 1,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 3,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 8,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 9,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 8,\n      \"alive\": false\n    },\n    {\n      \"x\": 11,\n      \"y\": 8,\n      \"alive\": true\n    },\n    {\n      \"x\": 0,\n      \"y\": 9,\n      \"alive\": true\n    },\n    {\n      \"x\": 1,\n      \"y\": 9,\n      \"alive\": true\n    },\n    {\n      \"x\": 2,\n      \"y\": 9,\n      \"alive\": false\n    },\n    {\n      \"x\": 3,\n      \"y\": 9,\n      \"alive\": false\n    },\n    {\n      \"x\": 4,\n      \"y\": 9,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 9,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 9,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 9,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 9,\n      \"alive\": true\n    },\n    {\n      \"x\": 9,\n      \"y\": 9,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 9,\n      \"alive\": false\n    },\n    {\n      \"x\": 11,\n      \"y\": 9,\n      \"alive\": true\n    },\n    {\n      \"x\": 0,\n      \"y\": 10,\n      \"alive\": false\n    },\n    {\n      \"x\": 1,\n      \"y\": 10,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 10,\n      \"alive\": false\n    },\n    {\n      \"x\": 3,\n      \"y\": 10,\n      \"alive\": true\n    },\n    {\n      \"x\": 4,\n      \"y\": 10,\n      \"alive\": false\n    },\n    {\n      \"x\": 5,\n      \"y\": 10,\n      \"alive\": false\n    },\n    {\n      \"x\": 6,\n      \"y\": 10,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 10,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 10,\n      \"alive\": true\n    },\n    {\n      \"x\": 9,\n      \"y\": 10,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 10,\n      \"alive\": true\n    },\n    {\n      \"x\": 11,\n      \"y\": 10,\n      \"alive\": true\n    },\n    {\n      \"x\": 0,\n      \"y\": 11,\n      \"alive\": false\n    },\n    {\n      \"x\": 1,\n      \"y\": 11,\n      \"alive\": false\n    },\n    {\n      \"x\": 2,\n      \"y\": 11,\n      \"alive\": true\n    },\n    {\n      \"x\": 3,\n      \"y\": 11,\n      \"alive\": true\n    },\n    {\n      \"x\": 4,\n      \"y\": 11,\n      \"alive\": true\n    },\n    {\n      \"x\": 5,\n      \"y\": 11,\n      \"alive\": true\n    },\n    {\n      \"x\": 6,\n      \"y\": 11,\n      \"alive\": true\n    },\n    {\n      \"x\": 7,\n      \"y\": 11,\n      \"alive\": false\n    },\n    {\n      \"x\": 8,\n      \"y\": 11,\n      \"alive\": false\n    },\n    {\n      \"x\": 9,\n      \"y\": 11,\n      \"alive\": false\n    },\n    {\n      \"x\": 10,\n      \"y\": 11,\n      \"alive\": true\n    },\n    {\n      \"x\": 11,\n      \"y\": 11,\n      \"alive\": true\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}

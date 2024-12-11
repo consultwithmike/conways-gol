@@ -1,0 +1,6 @@
+@conways_gol_HostAddress = http://localhost:5203
+
+GET {{conways_gol_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
